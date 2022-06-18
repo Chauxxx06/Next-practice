@@ -25,6 +25,9 @@
             ],
             "@hooks/*":[
                 "hooks/*"
+            ],
+            "@templates/*":[
+                "templates/*"
             ]
         }
     }

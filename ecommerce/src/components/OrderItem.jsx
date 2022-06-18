@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
+import Image from 'next/image';
 import AppContext from '@context/AppContext';
-import close from '@icons/icon_close.png'
+import close from '@icons/icon_close.png';
+import style from '@styles/OrderItem.module.scss'
 
 const OrderItem = ({product}) => {
     const { removeToCart } = useContext(AppContext);
@@ -8,13 +10,13 @@ const OrderItem = ({product}) => {
         removeToCart(product);
     }
     return(
-        <div className="shopping-cart">
+        <div className={style["shopping-cart"]}>
             <figure>
-                <img src={product.category.image} alt={product.title}/>
+                <img src={product?.category.image} alt={product?.title}/>
             </figure>
-            <p>{product.title}</p>
-            <p>${product.price}</p>
-            <img src={close} alt="close" onClick={() => handleRemove(product)}/>
+            <p>{product?.title}</p>
+            <p>${product?.price}</p>
+            <Image src={close} alt="close" onClick={() => handleRemove(product)}/>
         </div>
     );
 }

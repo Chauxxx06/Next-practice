@@ -1,9 +1,9 @@
-import Header from "@components/Header";
+import Products from "@templates/Products"
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Products />
     </>
   )
 }
