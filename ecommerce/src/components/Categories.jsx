@@ -1,50 +1,73 @@
 import React from 'react';
-import '@styles/Categories.scss'
+import Link from 'next/link';
+import '@styles/Categories.scss';
 
 const Categories = () => {
     return(
         <div className="mobile-menu">
             <ul>
                 <li>
-                    <a href="/">CATEGORIES</a>
+                    <Link href="/CATEGORIES">
+                        CATEGORIES
+                    </Link>
                 </li>
                 <li>
-                    <a href="/">All</a>
+                    <Link href="/All">
+                        All
+                    </Link>
                 </li>
                 <li>
-                    <a href="/">Clothes</a>
+                    <Link href="/Clothes">
+                        Clothes
+                    </Link>
                 </li>
                 <li>
-                    <a href="/">Electronics</a>
+                    <Link href="/Electronics">
+                        Electronics
+                    </Link>
                 </li>
                 <li>
-                    <a href="/">Furnitures</a>
+                    <Link href="/Furnitures">
+                        Furnitures
+                    </Link>
                 </li>
                 <li>
-                    <a href="/">Toys</a>
+                    <Link href="/Toys">
+                        Toys
+                    </Link>
                 </li>
                 <li>
-                    <a href="/">Other</a>
+                    <Link href="/Others">
+                        Others
+                    </Link>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a href="/">My orders</a>
+                    <Link href="/">
+                        My Orders
+                    </Link>
                 </li>
                 <li>
-                    <a href="/">My account</a>
+                <Link href="/">
+                        My Account
+                    </Link>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a href="/" className="email">platzi@example.com</a>
+                    <Link href="/" className="email">
+                        platzi@example.com
+                    </Link>
                 </li>
                 <li>
-                    <a href="/" className="sign-out">Sign out</a>
+                    <Link href="/" className="sign-out">
+                        Sign out
+                    </Link>
                 </li>
             </ul>
         </div>
     );
-}
+};
 
 export default Categories;

@@ -1,5 +1,6 @@
 import React from 'react';
-import arrow from '@icons/flechita.svg'
+import arrow from '@icons/flechita.svg';
+import Image from 'next/image';
 
 const ShoppingCartItem = () => {
     return(
@@ -9,9 +10,9 @@ const ShoppingCartItem = () => {
                 <span>6 articles</span>
             </p>
             <p>$560.00</p>
-            <img src={arrow} alt="arrow"/>
+            <Image src={arrow} alt="arrow"/>
         </div>
     );
-}
+};
 
 export default ShoppingCartItem;
