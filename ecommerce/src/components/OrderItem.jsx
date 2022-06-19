@@ -12,7 +12,7 @@ const OrderItem = ({product}) => {
     return(
         <div className={style["shopping-cart"]}>
             <figure>
-                <Image src={product?.category.image} alt={product?.title}/>
+                <img src={product?.category.image} alt={product?.title}/>
             </figure>
             <p>{product?.title}</p>
             <p>${product?.price}</p>

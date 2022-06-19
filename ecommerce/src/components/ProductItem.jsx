@@ -12,7 +12,7 @@ const ProductItem = ({product}) => {
     };
     return(
         <div className={style["product-card"]}>
-            <Image src={product.category.image} alt={product.title}/>
+            <img src={product.category.image}  alt={product.title}/>
             <div className={style["product-info"]}>
                 <div>
                     <p>${product.price}</p>
